@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "setup secret JWT_KEY"
+kubectl create secret generic jwt-secret --from-literal=JWT_KEY=asdf
+
+echo "setup secret STRIPE_KEY"
+kubectl create secret generic stripe-secret --from-literal=STRIPE_KEY=sk_test_51IkqfKHEr0dxCxHcFL3Bot21xRbM7Jzee23QJvaH9aJGWb46C84mtxdibtDzBfkvZ6OoHSvzVDLMo4l9bBAAyb0C00uhAa8vuY
+
+echo "setup ingress-nginx"
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.45.0/deploy/static/provider/cloud/deploy.yaml
