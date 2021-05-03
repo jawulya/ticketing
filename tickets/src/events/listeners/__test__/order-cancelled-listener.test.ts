@@ -18,9 +18,7 @@ const setup = async () => {
     const data: OrderCancelledEvent['data'] = {
         id: orderId,
         version: 0,
-        ticket: {
-            id: ticket.id,
-        }
+        ticket: ticket.id,
     }
     //@ts-ignore
     const msg: Message = {
