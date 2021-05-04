@@ -7,6 +7,7 @@ import {ExpirationCompleteListener} from "./events/listeners/expiration-complete
 import {PaymentCreatedListener} from "./events/listeners/payment-created-listener";
 
 const start = async () => {
+    
     if (!process.env.JWT_KEY) {
         throw new Error('jwt_key not defined');
     }
@@ -16,6 +17,7 @@ const start = async () => {
     if (!process.env.NATS_CLUSTER_ID) {
         throw new Error('NATS_CLUSTER_ID not defined');
     }
+
     if (!process.env.NATS_URL) {
         throw new Error('NATS_URL not defined');
     }
