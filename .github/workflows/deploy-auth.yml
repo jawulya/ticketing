@@ -24,7 +24,7 @@ env:
   GKE_CLUSTER: ticketing    # TODO: update to cluster name
   GKE_ZONE: europe-west2-a   # TODO: update to cluster zone
   DEPLOYMENT_NAME: auth-depl # TODO: update to deployment name
-  IMAGE: jawulya/auth
+  IMAGE: auth
 
 jobs:
   setup-build-publish-deploy:
