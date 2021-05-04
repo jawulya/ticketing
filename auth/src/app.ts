@@ -19,7 +19,6 @@ app.use(cookieSession({
 }))
 
 app.use(json());
-
 app.use(currentUserRouter);
 app.use(signInRouter);
 app.use(signUpRouter);
