@@ -2,6 +2,7 @@ import {natsService} from "./nats-service";
 import {OrderCreatedListener} from "./events/listeners/order-created-listener";
 
 const start = async () => {
+
     if (!process.env.NATS_CLUSTER_ID) {
         throw new Error('NATS_CLUSTER_ID not defined');
     }
