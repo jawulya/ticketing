@@ -9,7 +9,7 @@ metadata:
 spec:
   rules:
 #  - host: ticketing.com
-    http:
+  - http:
       paths:
       - path: /api/payments/?(.*)
         backend:
