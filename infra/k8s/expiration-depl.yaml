@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: expiration
-          image: jawulya/expiration
+          image: gcr.io/ticketing-306309/expiration
           env:
             - name: NATS_URL
               value: 'http://nats-srv:4222'
