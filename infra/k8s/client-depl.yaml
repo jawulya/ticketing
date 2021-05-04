@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: client
-          image: jawulya/client
+          image: gcr.io/ticketing-306309/client
 ---
 apiVersion: v1
 kind: Service
